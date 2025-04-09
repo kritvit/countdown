@@ -42,12 +42,11 @@ body * {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    line-height: 66px;
     color: rgba(255, 0, 200, 1);
     /* font-size: 66px; */
     font-size: 11vw;
     line-height: 10vw;
-    font-family: helvetica neue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     letter-spacing: 3px;
     white-space: nowrap;
@@ -64,4 +63,19 @@ body * {
 #time-to-move div {
     margin-bottom: 10px;
     flex-wrap: wrap;
+}
+
+@media (min-width: 769px) {
+
+    #time-to-move {
+        font-size: 85px;
+        line-height: 77px;
+        letter-spacing: 3px;
+    }
+
+    #time-to-move .small-text {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
 }
