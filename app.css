@@ -42,7 +42,9 @@ body * {
     flex-direction: column;
     line-height: 66px;
     color: rgba(255, 0, 200, 1);
-    font-size: 66px;
+    /* font-size: 66px; */
+    font-size: 10vw;
+    line-height: 9vw;
     font-family: helvetica neue;
     font-weight: 100;
     letter-spacing: 2px;
@@ -50,8 +52,11 @@ body * {
 }
 
 #time-to-move .small-text {
-    line-height: 26px;
-    font-size: 26px;
+    /* line-height: 26px; */
+    /* font-size: 26px; */
+    font-size: 4vw;
+    line-height: 4vw;
+    justify-content: center;
 }
 
 #time-to-move div {
