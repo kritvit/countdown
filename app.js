@@ -31,7 +31,7 @@
         const daySuffix = totalDays === 1 ? " dag" : " dagar";
 
         // document.getElementById("time-until-deadline-month").textContent = totalMonths + monthSuffix;
-        document.getElementById("time-until-deadline-week").textContent = totalWeeks + weekSuffix;
+        // document.getElementById("time-until-deadline-week").textContent = totalWeeks + weekSuffix;
         document.getElementById("time-until-deadline-day").textContent = totalDays + daySuffix;
     }
 

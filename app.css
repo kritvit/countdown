@@ -13,6 +13,9 @@ body {
     background: linear-gradient(to bottom, black, rgb(40, 0, 100), black);
     background-attachment: fixed;
     box-shadow: inset 0px 0px 100px 50px rgb(15, 0, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body * {
@@ -35,7 +38,6 @@ body * {
 }
 
 #time-to-move {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
