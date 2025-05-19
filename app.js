@@ -7,6 +7,9 @@
         let months = Math.floor(totalDays / 30);
         let weeks = Math.floor((totalDays % 30) / 7);
         let days = totalDays % 7;
+        months = months < 0 ? 0 : months;
+        weeks = weeks < 0 ? 0 : weeks;
+        days = days < 0 ? 0 : days;
         const monthSuffix = months === 1 ? " månad," : " månader,";
         const weekSuffix = weeks === 1 ? " vecka och" : " veckor och";
         const daySuffix = days === 1 ? " dag!" : " dagar!";
@@ -24,10 +27,11 @@
         const now = new Date();
 
         let totalDays = Math.floor((deadline - now) / (1000 * 60 * 60 * 24));
-        let totalWeeks = Math.floor(totalDays / 7);
-        let totalMonths = Math.floor(totalDays / 30);
-        const monthSuffix = totalMonths === 1 ? " månad" : " månader";
-        const weekSuffix = totalWeeks === 1 ? " vecka" : " veckor";
+        // let totalWeeks = Math.floor(totalDays / 7);
+        // let totalMonths = Math.floor(totalDays / 30);
+        // const monthSuffix = totalMonths === 1 ? " månad" : " månader";
+        // const weekSuffix = totalWeeks === 1 ? " vecka" : " veckor";
+        totalDays = totalDays < 0 ? 0 : totalDays;
         const daySuffix = totalDays === 1 ? " dag" : " dagar";
 
         // document.getElementById("time-until-deadline-month").textContent = totalMonths + monthSuffix;
